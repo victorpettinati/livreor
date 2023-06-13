@@ -82,7 +82,7 @@ if (isset($_POST['formprofil'])) {
                             <label for="login">Login :</label>
                         </td>
                         <td>
-                            <input type="text" id="login" name="login" value="<?php echo $user['login']; ?>" required>
+                            <input type="text" id="login" name="login" value="" required>
                         </td>
                     </tr>
                     <tr>
@@ -105,7 +105,7 @@ if (isset($_POST['formprofil'])) {
                         <td>
                             <input type="submit" name="formprofil" value="Modifier"><a href="deconnexion.php">Déconnexion</a>
                         </td>
-                            <a href="commentaire.php">Accéder à l'espace commentaire</a>
+                            <a href="commentaire.php">Laisser un commentaire</a>
                 </table>
             </form>
         </div>
