@@ -46,43 +46,27 @@ if (isset($_POST['forminscription'])) {
 </head>
 
 <body>
-    <h1><a href="index.php">Inscription</a></h1>
-    <div class="container">                                                                 
-        <div class="text-frame">
-                        <form action="" method="POST">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <label for="login">Login:</label>
-                                    </td>
-                                    <td>
-                                        <input type="text" placeholder="Login" id="login" name="login" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                <tr>
-                                    <td>
-                                        <label for="mot_de_passe">Mot de passe:</label>
-                                    </td>
-                                    <td>
-                                        <input type="password" placeholder="Mot de passe" id="mot_de_passe" name="mot_de_passe" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="mot_de_passe2">Confirmation mot de passe:</label>
-                                    </td>
-                                    <td>
-                                        <input type="password" placeholder="Confirmation mot de passe" id="mot_de_passe2"
-                                            name="mot_de_passe2" required>
-                                    </td>
-                                </tr>
-                                <td>
-                                        <input type="submit" name="forminscription" value="S'inscrire"> <a href="connexion.php">Déjà inscrit ?
-                                </td>
-                            </table>
-                        </form>
-        </div>
+    
+    <div class="container">
+        
+
+    <form>
+    <a href="index.php"><p>Inscription</p></a>
+        <input type="login" placeholder="Login"><br>
+        <input type="password" placeholder="Mot de passe"><br>
+        <input type="password" placeholder="Confirmation mot de passe" id="mot_de_passe2"name="mot_de_passe2" required><br>
+        <input type="button" value="Connexion"><br>
+        <a href="connexion.php">Déjà inscrit ?</a>
+    </form>
+
+    <div class="drop drop-1"></div>
+    <div class="drop drop-2"></div>
+    <div class="drop drop-3"></div>
+    <div class="drop drop-4"></div>
+    <div class="drop drop-5"></div>
+    <div class="drop drop-6"></div>
+
+
     </div>
     <?php
     if (isset($erreur)) {

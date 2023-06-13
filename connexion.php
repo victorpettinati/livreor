@@ -41,13 +41,35 @@ if (isset($_POST['formconnexion'])) {
     <title>Page de Connexion</title>
 </head>
 <body>
-    <h1><a href="index.php">Connexion</a></h1>
                                                                 <?php if (isset($erreur)) { ?>
                                                                     <p><?php echo $erreur; ?></p>
                                                                 <?php } ?>
     <div class="container">                                                                 
-        <div class="text-frame">
-            <form method="POST" action="">
+    <form>
+    <a href="index.php"><p>Se connecter</p></a>
+        <input type="login" placeholder="Login"><br>
+        <input type="password" placeholder="Mot de passe"><br>
+        <input type="button" class="button2" value="Connexion"><br>
+        <a href="inscription.php">S'inscrire</a>
+    </form>
+    
+
+    <div class="drop drop-1"></div>
+    <div class="drop drop-2"></div>
+    <div class="drop drop-3"></div>
+    <div class="drop drop-4"></div>
+    <div class="drop drop-5"></div>
+    <div class="drop drop-6"></div>
+
+
+    </div>
+    </div>
+</body>
+</html>
+
+
+
+            <!-- <form method="POST" action="">
                 <table>
                     <tr>
                                 <td>
@@ -71,6 +93,3 @@ if (isset($_POST['formconnexion'])) {
                 </table>
             </form>
         </div>
-    </div>
-</body>
-</html>

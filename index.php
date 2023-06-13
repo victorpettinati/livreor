@@ -9,25 +9,31 @@
 </head>
 <body>
 
-<h1>Accueil</h1>
 
-<div class="carousel_wrapper">
-  <div class="carousel">
-    <div class="slide one">
-        <a href="inscription.php"><img src="black.jpg" /></a>
-    </div>
-    <div class="slide two">
-        <a href="connexion.php"><img src="black2.jpg" />
-    </div>
-    <div class="slide three">
-        <a href="inscription.php"><img src="black.jpg" /></a>
-    </div>
-    <div class="slide four">
-        <a href="connexion.php"><img src="black2.jpg" />
-    </div>
+<div class="container">
+
+
+
+    <form>
+    <p>Bienvenue<p>
+        <input type="login" placeholder="Login"><br>
+        <input type="password" placeholder="Mot de passe"><br>
+        <input type="button" value="Connexion"><br>
+        <a href="livre-or.php">Accéder à l'espace commentaire</a>
+    </form>
+
+    <div class="drop drop-1"></div>
+    <div class="drop drop-2"></div>
+    <div class="drop drop-3"></div>
+    <div class="drop drop-4"></div>
+    <div class="drop drop-5"></div>
+    <div class="drop drop-6"></div>
+
+    
+
 </div>
 
-<a href="livre-or.php">Accéder à l'espace commentaire</a>
+
 
 
     
