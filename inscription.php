@@ -49,7 +49,6 @@ if (isset($_POST['forminscription'])) {
     
     <div class="container">
         
-
     <form action="" method="POST">
     <a href="index.php"><p>Inscription</p></a>
         <input type="text" placeholder="Login" id="login" name="login"><br>

@@ -1,7 +1,7 @@
 <?php
 session_start(); // Démarre la session
 
-$bdd = new PDO('mysql:host=localhost; dbname=moduleconnexion', 'root', 'Laplateforme.06!');
+$bdd = new PDO('mysql:host=localhost; dbname=livreor', 'root', 'Laplateforme.06!');
 
 if (!isset($_SESSION['login'])) {
     // Redirige l'utilisateur vers la page de connexion s'il n'est pas connecté
@@ -32,7 +32,7 @@ if (isset($_POST['formprofil'])) {
 
             if ($nouveau_mot_de_passe === $confirmer_mot_de_passe) {
                 // Met à jour les informations de l'utilisateur dans la base de données
-                $update = $bdd->prepare("UPDATE utilisateurs SET login = ?, WHERE id = ?");
+                $update = $bdd->prepare("UPDATE utilisateurs SET login = ? WHERE id = ?");
                 $update->execute(array($login, $user['id']));
 
                 // Met à jour le mot de passe si un nouveau mot de passe est fourni
@@ -66,15 +66,30 @@ if (isset($_POST['formprofil'])) {
     <title>Profil</title>
 </head>
 <body>
-    <h1>Profil</h1>
                                                             <?php if (isset($message)) { ?>
                                                                 <p><?php echo $message; ?></p>
                                                             <?php } ?>
                                                             <?php if (isset($erreur)) { ?>
                                                                 <p><?php echo $erreur; ?></p>
                                                             <?php } ?>
-    <div class="container">                                                                 
-        <div class="text-frame">
+    <div class="container">  
+
+    <form action="" method="POST">
+        <p>Profil</p>
+        <input type="text" placeholder="Login" id="login" name="login"><br>
+        <input type="password" placeholder="Nouveau mot de passe" id="nouveau_mot_de_passe" name="nouveau_mot_de_passe"><br>
+        <input type="password" placeholder="Confirmer le nouveau mot de passe" id="confirmer_mot_de_passe" name="confirmer_mot_de_passe"><br>
+        <input type="submit" name="formprofil" value="Modifier"><br>
+        <a href="commentaire.php">Laisser un commentaire</a> <br>
+        <a href="deconnexion.php">Déconnexion</a>  
+    </form>                                                          
+        
+    </div>
+</body>
+</html>
+
+
+<!-- <div class="text-frame">
             <form method="POST" action="">
                 <table>
                     <tr>
@@ -108,9 +123,4 @@ if (isset($_POST['formprofil'])) {
                             <a href="commentaire.php">Laisser un commentaire</a>
                 </table>
             </form>
-        </div>
-    </div>
-</body>
-</html>
-
-
+        </div> -->

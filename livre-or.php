@@ -13,7 +13,11 @@ $commentaires = $bdd->query($req);
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- ... -->
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Livre-or</title>
 </head>
 <body>
     <h1>Livre d'or</h1>
@@ -29,15 +33,9 @@ $commentaires = $bdd->query($req);
         </div>
     <?php } ?>
 
-    <div class="container">
-        <div class="text-frame">
-            <form method="POST" action="">
-                <!-- ... -->
-            </form>
 
             <a href="deconnexion.php">Déconnexion</a>
             <a href="profil.php">Retour au profil</a>
-        </div>
-    </div>
+
 </body>
 </html>
