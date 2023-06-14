@@ -45,14 +45,14 @@ if (isset($_POST['formconnexion'])) {
                                                                     <p><?php echo $erreur; ?></p>
                                                                 <?php } ?>
     <div class="container">                                                                 
-    <form>
+    <form action="" method="POST">
     <a href="index.php"><p>Se connecter</p></a>
-        <input type="login" placeholder="Login"><br>
-        <input type="password" placeholder="Mot de passe"><br>
-        <input type="button" class="button2" value="Connexion"><br>
+        <input type="text" placeholder="Login" id="login" name="login"><br>
+        <input type="password" placeholder="Mot de passe" id="mot_de_passe" name="mot_de_passe"><br>
+        <input type="submit" name="formconnexion"  value="Connexion"><br>
         <a href="inscription.php">S'inscrire</a>
     </form>
-    
+
 
     <div class="drop drop-1"></div>
     <div class="drop drop-2"></div>
@@ -67,29 +67,3 @@ if (isset($_POST['formconnexion'])) {
 </body>
 </html>
 
-
-
-            <!-- <form method="POST" action="">
-                <table>
-                    <tr>
-                                <td>
-                                    <label for="login">Login :</label>
-                                </td>
-                                <td>
-                                    <input type="text" placeholder="Login" id="login" name="login" required>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="mot_de_passe">Mot de passe :</label>
-                                </td>
-                                <td>
-                                    <input type="password" placeholder="Mot de passe" id="mot_de_passe" name="mot_de_passe" required>
-                                </td>
-                            </tr>
-                            <td>
-                                    <input type="submit" name="formconnexion" value="Se connecter"><a href="inscription.php">S'inscrire</a>
-                                </td>
-                </table>
-            </form>
-        </div>

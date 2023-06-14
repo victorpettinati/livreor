@@ -14,17 +14,16 @@
 
 
 
-    <form>
-    <p>Bienvenue<p>
-        <input type="login" placeholder="Login"><br>
-        <input type="password" placeholder="Mot de passe"><br>
-        <input type="button" value="Connexion"><br>
+    <div class="index">
+    <h1>Bienvenue</h1>
+        <a class="button2" href="inscription.php">Inscription</a><br>
+        <a class="button3" href="connexion.php">Connexion</a><br>
         <a href="livre-or.php">Accéder à l'espace commentaire</a>
-    </form>
+    </div>
 
     <div class="drop drop-1"></div>
     <div class="drop drop-2"></div>
-    <div class="drop drop-3"></div>
+    <div class="drop drop-7"></div>
     <div class="drop drop-4"></div>
     <div class="drop drop-5"></div>
     <div class="drop drop-6"></div>

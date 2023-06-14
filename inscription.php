@@ -50,13 +50,18 @@ if (isset($_POST['forminscription'])) {
     <div class="container">
         
 
-    <form>
+    <form action="" method="POST">
     <a href="index.php"><p>Inscription</p></a>
-        <input type="login" placeholder="Login"><br>
-        <input type="password" placeholder="Mot de passe"><br>
-        <input type="password" placeholder="Confirmation mot de passe" id="mot_de_passe2"name="mot_de_passe2" required><br>
-        <input type="button" value="Connexion"><br>
+        <input type="text" placeholder="Login" id="login" name="login"><br>
+        <input type="password" placeholder="Mot de passe" id="mot_de_passe" name="mot_de_passe"><br>
+        <input type="password" placeholder="Confirmation mot de passe" id="mot_de_passe2"name="mot_de_passe2"><br>
+        <input type="submit" name="forminscription" value="S'inscrire"><br>
         <a href="connexion.php">Déjà inscrit ?</a>
+        <p>  <?php
+    if (isset($erreur)) {
+        echo $erreur;
+    }
+    ?></p>
     </form>
 
     <div class="drop drop-1"></div>
@@ -68,12 +73,9 @@ if (isset($_POST['forminscription'])) {
 
 
     </div>
-    <?php
-    if (isset($erreur)) {
-        echo $erreur;
-    }
-    ?>
+  
 
 </body>
 
 </html>
+

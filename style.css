@@ -4,6 +4,15 @@
     outline: none;
 }
 
+h1 {
+    color: white;
+    font-weight: 500;
+    opacity: .7;
+    font-size: 3rem;
+    margin-bottom: 120px;
+}
+
+
 body {
     background: linear-gradient(45deg, #d01d9b, #590098);
     height: 100vh;
@@ -15,6 +24,22 @@ body {
 
 .container {
     position: relative;
+}
+
+.index {
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.index .button2 {
+    padding-top: 50px;
+    font-size: 25px;
+}
+.index .button3 {
+    padding-bottom: 50px;
+    font-size: 25px;
 }
 
 form {
@@ -131,6 +156,12 @@ input[type="button"]{
 .drop-6 {
     height: 120px; width: 120px;
     bottom: -150px; right: 290px;
+    z-index: -1;
+}
+
+.drop-7 {
+    height: 100px; width: 100px;
+    bottom: 180px; right: 30px;
     z-index: -1;
 }
 
